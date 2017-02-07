@@ -1,13 +1,11 @@
-
 stages:
   - build
-  - deploy
 
-deploy:
+build:
   image: docker.ii.org.nz/openstack/build-packages:buildv1
   stage: deploy
   script:
-    - apt-get update
+    - gbp buildpackage
     - ls -la
     - pwd 
     - sleep 1000000
