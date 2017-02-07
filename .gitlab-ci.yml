@@ -1,5 +1,6 @@
-stages:
-  - build
+#stages:
+#  - build
+#  - deploy
 
 build:
   image: docker.ii.org.nz/openstack/build-packages:buildv1
