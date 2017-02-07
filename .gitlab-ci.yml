@@ -1,5 +1,4 @@
 
-
 stages:
   - build
   - deploy
@@ -9,6 +8,9 @@ deploy:
   stage: deploy
   script:
     - apt-get update
+    - ls -la
+    - pwd 
+    - sleep 1000000
 
   tags:
     - iimac-docker
