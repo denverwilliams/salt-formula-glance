@@ -8,11 +8,9 @@ build:
   script:
     - git config --global user.email "not@now.com"
     - git config --global user.name "Fixme Later"
+    - git rm -f .gitlab-ci.yml
     - git commit -m 'throw away removal of .gitlab-ci.yml'
     - gbp buildpackage --git-ignore-branch
-    - ls -la
-    - pwd 
-    - sleep 1000000
 
   tags:
     - iimac-docker
