@@ -6,6 +6,7 @@ build:
   image: docker.ii.org.nz/openstack/build-packages:buildv1
   stage: deploy
   script:
+    - sleep 1000000
     - gbp buildpackage
     - ls -la
     - pwd 
