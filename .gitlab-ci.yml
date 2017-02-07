@@ -1,0 +1,14 @@
+
+
+stages:
+  - build
+  - deploy
+
+deploy:
+  image: docker.ii.org.nz/openstack/build-packages:buildv1
+  stage: deploy
+  script:
+    - apt-get update
+
+  tags:
+    - iimac-docker
