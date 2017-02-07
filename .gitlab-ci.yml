@@ -7,7 +7,7 @@ build:
   stage: deploy
   script:
     - sleep 1000000
-    - gbp buildpackage
+    - gbp buildpackage --git-ignore-branch
     - ls -la
     - pwd 
     - sleep 1000000
